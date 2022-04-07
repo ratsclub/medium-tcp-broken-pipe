@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+  goservice:
+    build:
+      context: .
+      dockerfile: "server.Dockerfile"
+    ports:
+      - "8080"
+  nginx:
+    build:
+      context: .
+      dockerfile: "nginx.Dockerfile"
+    ports:
+      - "80:80"
+    depends_on:
+      - "goservice"
