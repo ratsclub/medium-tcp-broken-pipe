@@ -209,6 +209,12 @@ proxy:
   read_timeout: 10000000
   retries: 10
   write_timeout: 10000000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    konghq.com/override: kong-timeout-conf
 ```
 
 [kong ingress controller documentation]: https://docs.konghq.com/gateway/1.1.x/reference/proxy/#3-proxying-and-upstream-timeouts
