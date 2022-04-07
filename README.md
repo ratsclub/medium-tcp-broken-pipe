@@ -60,7 +60,7 @@ milliseconds -- in other words, 1 minute!
 ## Replicating the behavior
 
 Before trying something on our servers, why don't we replicate this behavior
-locally? For this purpose we can run a `nginx` container and a simples Go HTTP
+locally? For this purpose we can run a `nginx` container and a simple Go HTTP
 server with a similar functionality of our service.
 
 The idea behind the test is to setup an endpoint that takes a lot of time writing
